@@ -36,7 +36,7 @@ syn region sshString start=/"/ skip=/\\"/ end=/"/ oneline
 " Comments
 syn match sshComment /^#.*/
 
-syn match sshSSH2Comment /= .*$/ms=s+1
+syn match sshSSH2Comment / [^ ]*$/
 
 if version >= 508
 	command -nargs=+ HiLink hi link <args>
