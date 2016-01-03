@@ -27,6 +27,8 @@ syn match sshSSH1Comment  " .*" contained
 " SSH2 key type
 syn match sshSSH2KeyType "ssh-rsa"
 syn match sshSSH2KeyType "ssh-dss"
+syn match sshSSH2KeyType "ssh-ecdsa"
+syn match sshSSH2KeyType "ssh-ed25519"
  
 " Strings
 syn region sshString start=/"/ skip=/\\"/ end=/"/ oneline
